@@ -15,6 +15,10 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.orhanobut.hawk.Hawk;
 
 import br.usjt.appcadastro.R;
@@ -30,6 +34,8 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro_usuario);
+
+        mAuth = FirebaseAuth.getInstance();
 
         replaceFragment(R.id.frameLayoutCadastroUsuarioActivity,
                 PerfilFragment.newInstance(true,""),
@@ -49,14 +55,22 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
                 .commit();
     }
 
-
+    private FirebaseAuth mAuth;
 
 
     @Override
     protected void onStart(){
         super.onStart();
-        Log.d("CICLO_DE_VIDA","MainActivity --> onStart");
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        updateUI(currentUser);
     }
+
+    private void updateUI(FirebaseUser currentUser) {
+    }
+
+
+
+
 
     @Override
     protected void onResume(){

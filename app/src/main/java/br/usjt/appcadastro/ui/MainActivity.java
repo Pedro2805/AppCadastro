@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -67,6 +68,8 @@ public class MainActivity extends AppCompatActivity {
         );
     }
 
+
+
     protected void replaceFragment(@IdRes int containerViewId,
                                    @NonNull Fragment fragment,
                                    @NonNull String fragmentTag,
@@ -92,5 +95,9 @@ public class MainActivity extends AppCompatActivity {
             return(true);
     }
         return(super.onOptionsItemSelected(item));
+    }
+
+    public void irParaCadastro (View view){
+        startActivity (new Intent(this, CadastroUsuarioActivity.class));
     }
 }

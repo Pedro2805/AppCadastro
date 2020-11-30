@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1070700009359",
+    "firebase_url": "https://choose-your-trip.firebaseio.com",
+    "project_id": "choose-your-trip",
+    "storage_bucket": "choose-your-trip.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070700009359:android:249d94efb558c436209dfa",
+        "android_client_info": {
+          "package_name": "br.usjt.appcadastro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070700009359-6rd70f9arclpuc54c3dmpghbkdbgad3u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA7eUGLcIq1W-BWNPGEkSatf4blzZt0Js"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1070700009359-6rd70f9arclpuc54c3dmpghbkdbgad3u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
